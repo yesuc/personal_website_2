@@ -1,0 +1,46 @@
+<head>
+  <title>Yesu's Home Page</title>
+</head>
+    <!-- Header -->
+    <h1>Yesu Carter</h1>
+    <div class="note">
+      Website still underdevelopment.
+    </div>
+
+    <!-- Site Navigation Bar -->
+    <%=render("shared/navbar")%>
+
+    <span class="main_container">
+
+    <!-- Profile Image and Short Description -->
+    <div class="profile_container">
+      <%=image_tag("profile_image.jpg", alt: "Yesu Carter")%>
+      <img src="profile_image.jpg" alt="">
+      <div class="profile_description"> '19 Computer Science and Japanese Undergraduate at Colgate University </div>
+      <div class="profile_contact"> Schenectady, NY </div>
+      <div class="profile_contact">
+        ycarter@colgate.edu
+      </div>
+    </div>
+
+    <!-- Current Projects and More Information -->
+    <div class="info_container">
+
+      <div class="description_header"> Interests </div>
+      <hr>
+      <div class="description">
+        Web Application and Software Development where I can own my own, be proud of it, and have a direct impact on clients.
+      </div>
+
+      <div class="description_header"> Current Projects </div>
+      <hr>
+      <div class="description"> Personal Website - Building a personal website using the newly learned AngularJS Framework, HTML, JavaScript, and CSS. Current objective: increase job application responses (even rejections!). </div>
+
+      <div class="description_header"> Recent Projects </div>
+      <hr>
+      <div class="description"> Food Allergens Web Application - Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Recieved a $4,500 research grant under The Division of Natural Sciences at Colgate for this project. </div>
+      <div class="description"> Hamilton Central PTO Web Application - Followed an Agile approach to design another Ruby on Rails Web App for a local High School's new Parent Teacher Organization. </div>
+
+    </div>
+
+  </span>

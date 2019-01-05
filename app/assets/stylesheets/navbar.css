@@ -1,0 +1,25 @@
+body {
+  background-color: #8abdce;
+  margin: 0;
+}
+h1 {
+  padding-left: 10px;
+}
+.navbar ul {
+  background-color: #0759bf;
+
+  list-style-type: none;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.navbar li a {
+  color: white;
+  padding: 14px 16px;
+  display: block;
+}
+
+.navbar li {
+  float: left;
+}

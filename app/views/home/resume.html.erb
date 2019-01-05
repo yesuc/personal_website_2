@@ -1,0 +1,52 @@
+<head>
+  <title>Yesu's Resume</title>
+</head>
+
+<!-- Header -->
+<h1>Hire Yesu Carter</h1>
+
+<!-- Site Navigation Bar -->
+<%=render("shared/navbar")%>
+
+<div class="container" >
+ <%=link_to 'Download Full PDF', download_pdf_path, class:"download_pdf"%>
+ <div class="">
+   This page is still under development!
+ </div>
+
+ <h2>Education</h2>
+
+   <span>Colgate University, Hamilton, NY </span>
+   <span class="date"> August 2015 - May 2019 </span>
+   <ul class="bullets">
+     <li> Current GPA: 3.55/4.0 </li>
+     <li> Double Major: Computer Science and Japanese Language </li>
+     <li>
+       Dean's Award For Academic Excellence
+       <span class="date"> All Semesters </span>
+     </li>
+   </ul>
+
+ <h2>Technical Knowledge</h2>
+   <div class="frameworks">
+     Frameworks and Experience:
+     <%-fworks= {'Ruby-On-Rails' => '2 years', 'AngularJS' => '1 year'}%>
+     <%-fworks.each do |name, exp|%>
+       <ul class="bullets">
+         <li> <%="#{name} - #{exp}"%></li>
+       </ul>
+    <%end%>
+   </div>
+
+   <div class="plangs">
+       Languages and Proficiency:
+       <%-pLangs= {'High' => ['Java', 'Python', 'Ruby'], 'Intermediate' => ['HTML', 'CSS', 'JavaScript', 'SQLite']}%>
+       <%-pLangs.each do |prof, langList|%>
+         <ul class="bullets">
+           <li> <%="#{prof} - #{langList.join(', ')}"%> </li>
+         </ul>
+      <%end%>
+   </div>
+
+
+</div>

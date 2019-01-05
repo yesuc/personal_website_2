@@ -1,0 +1,53 @@
+.main_container {
+  background-color: #8abdce;
+  margin: 0;
+}
+
+h1 {
+  padding-left: 10px;
+}
+.note {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.profile_container {
+  padding: 10px;
+  height: 350px;
+  width: 292px;
+  border-style: solid;
+  display: inline-block;
+  float: left;
+}
+.profile_container img {
+  float: left;
+  height: 250px;
+  width: auto;
+}
+.profile_contact {
+  font-size: 15px;
+}
+
+.profile_description {
+  font-size: 17px;
+  display: initial;
+}
+
+.info_container {
+ width: auto;
+ padding-left: 10px;
+ padding-right: 10px;
+ overflow: hidden;
+ float: none;
+}
+
+.description_header {
+  font-size: 105%;
+  padding-top: 5px;
+}
+
+.description {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 5px;
+}

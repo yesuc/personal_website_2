@@ -1,0 +1,21 @@
+.container{
+  background-color: #8abdce;
+  margin: 0;
+  padding-left: 10px;
+}
+.download_pdf {
+  margin-top: 10px;
+  display: block;
+}
+h1 {
+  padding-left: 10px;
+}
+span.date {
+  position: absolute;
+  right: 5pt;
+}
+.bullets {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: square;
+}
