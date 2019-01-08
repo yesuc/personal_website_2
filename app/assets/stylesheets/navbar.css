@@ -1,25 +1,22 @@
-body {
-  background-color: #8abdce;
-  margin: 0;
-}
-h1 {
-  padding-left: 10px;
-}
 .navbar ul {
-  background-color: #0759bf;
-
+  /* background-color: #0759bf; */
+background-color: #1D2D44;
   list-style-type: none;
   overflow: hidden;
 
   margin: 0;
-  padding: 0;
+  padding: 0px 150px 0px;
 }
 .navbar li a {
   color: white;
+  text-decoration: none;
   padding: 14px 16px;
   display: block;
 }
 
 .navbar li {
   float: left;
+}
+.navbar li a:hover {
+  background-color: #748CAB;
 }
