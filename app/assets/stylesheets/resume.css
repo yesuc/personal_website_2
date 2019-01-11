@@ -1,21 +1,54 @@
-.container{
-  background-color: #8abdce;
-  margin: 0;
-  padding-left: 10px;
-}
 .download_pdf {
   margin-top: 10px;
   display: block;
 }
-h1 {
-  padding-left: 10px;
+.note {
+  padding-left: 0px;
+}
+
+.section {
+  /* margin: 0px 80px; */
+  margin: 0px 200px;
+}
+h2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+.location {
+  font-size: 12px;
 }
 span.date {
-  position: absolute;
   right: 5pt;
+  float: right;
 }
 .bullets {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-left: 20px;
   list-style-type: square;
+}
+.courses {
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.set a {
+  text-decoration: none;
+}
+
+
+
+.outerpart {
+  display: block;
+}
+.part {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.exp {
+  font-size: 13px;
 }

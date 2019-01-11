@@ -21,6 +21,7 @@ h1 {
   float: left;
   height: 250px;
   width: auto;
+  margin-bottom: 5px;
 }
 .profile_contact {
   font-size: 15px;

@@ -3,23 +3,23 @@
 </head>
 
 <!-- Header -->
-<h1>Hire Yesu Carter</h1>
+<h1>Yesu Carter</h1>
 
 <!-- Site Navigation Bar -->
 <%=render("shared/navbar")%>
 
-<div class="container" >
- <%=link_to 'Download Full PDF', download_pdf_path, class:"download_pdf"%>
- <div class="">
-   This page is still under development!
- </div>
+<div class="main_container" >
 
- <h2>Education</h2>
+ <%=link_to 'Download the full PDF', download_pdf_path, class:"download_pdf"%>
 
-   <span>Colgate University, Hamilton, NY </span>
-   <span class="date"> August 2015 - May 2019 </span>
-   <ul class="bullets">
-     <li> Current GPA: 3.55/4.0 </li>
+ <!-- Education -->
+ <section class="section">
+   <h2>Education</h2>
+     <span>Bachelor of Arts</span>
+     <div class="location">Expected May 2019, Colgate University, Hamilton, NY </div>
+
+    <ul class="bullets">
+     <li> Current GPA: 3.56/4.0 </li>
      <li> Double Major: Computer Science and Japanese Language </li>
      <li>
        Dean's Award For Academic Excellence
@@ -27,26 +27,82 @@
      </li>
    </ul>
 
- <h2>Technical Knowledge</h2>
-   <div class="frameworks">
-     Frameworks and Experience:
-     <%-fworks= {'Ruby-On-Rails' => '2 years', 'AngularJS' => '1 year'}%>
-     <%-fworks.each do |name, exp|%>
-       <ul class="bullets">
-         <li> <%="#{name} - #{exp}"%></li>
-       </ul>
-    <%end%>
-   </div>
+ </section>
 
-   <div class="plangs">
-       Languages and Proficiency:
-       <%-pLangs= {'High' => ['Java', 'Python', 'Ruby'], 'Intermediate' => ['HTML', 'CSS', 'JavaScript', 'SQLite']}%>
-       <%-pLangs.each do |prof, langList|%>
+ <!-- Technical Knowledge -->
+ <section class="section">
+   <h2>Technical Knowledge</h2>
+
+     <div class="set">
+       Frameworks and Experience:
+       <%-fworks= {'Ruby-On-Rails' => '2 years', 'AngularJS' => '1 year'}%>
+       <%-fworks.each do |name, exp|%>
          <ul class="bullets">
-           <li> <%="#{prof} - #{langList.join(', ')}"%> </li>
+           <li> <%="#{name} - #{exp}"%>
+             </li>
          </ul>
       <%end%>
+     </div>
+
+     <div class="set">
+         Languages and Proficiency:
+         <%-pLangs= {'High' => ['Java', 'Python', 'Ruby'], 'Intermediate' => ['HTML', 'CSS', 'JavaScript', 'SQLite']}%>
+         <%-pLangs.each do |prof, langList|%>
+           <ul class="bullets">
+             <li> <%="#{prof} - #{langList.join(', ')}"%> </li>
+           </ul>
+        <%end%>
+     </div>
+
+     <div class="set">
+       Frequently Used Tech Tools
+       <%-toolList= {'Github' => 'Version Control', 'Pivotal Tracker' => 'Project Velocity', 'Heroku' => 'App Deployment'}%>
+       <%toolList.each do |tool, desc|%>
+        <ul class="bullets">
+          <li>
+            <%="#{tool} - #{desc}"%>
+           </li>
+        </ul>
+      <%end%>
+     </div>
+
+     <div class="set">
+       Courses
+       <div class="courses">
+         Software Engineering, Databases, Algorithm Analysis, Operating Systems, Discrete Structures
+       </div>
+     </div>
+ </section>
+
+ <!-- Projects -->
+ <section class="section">
+   <h2>Projects</h2>
+   <div class="set">
+     <a href="https://github.com/yesuc/FAD-Webapp" rel="noopener noreferrer" target="_blank"> Allergens and Dietary Restrictions Web App</a>
+     <div class="location"> Summer 2018 - Colgate University, Hamilton, NY </div>
+     <ul class="bullets">
+        <li> Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Received a $4,500 research grant under The Division of Natural Sciences at Colgate for this project. </li>
+     </ul>
    </div>
+
+   <div class="set">
+      Parent Teacher Org. Full Stack Web App
+      <div class="location"> Spring 2018 - Hamilton Central High School, Hamilton, NY </div>
+      <ul class="bullets">
+        <li> Developed a Ruby on Rails Web App in an Agile Dev-team of 6, solidified the foundations for Hamilton High School's new PTO. </li>
+      </ul>
+   </div>
+
+   <div class="set">
+     Student Data Collection UI
+     <div class="location"> Spring 2017 - Colgate University </div>
+     <ul class="bullets">
+       <li> Independent project, designed and developed a UI and Backend Program to automatically collect and organize CS student information. Written in Java using Javax Swing Package.</li>
+     </ul>
+
+   </div>
+ </section>
+
 
 
 </div>
