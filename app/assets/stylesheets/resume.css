@@ -1,6 +1,9 @@
+.main_container {
+  background-color: #F0EBD8;
+}
 .download_pdf {
   margin-top: 10px;
-  display: block;
+  display: inline-block;
 }
 .note {
   padding-left: 0px;

@@ -11,36 +11,56 @@
     <%=render("shared/navbar")%>
 
     <span class="main_container">
-
+      <div class="top_container">
     <!-- Profile Image and Short Description -->
     <div class="profile_container">
-      <%=image_tag("profile_image.jpg", alt: "Yesu Carter")%>
-      <img src="profile_image.jpg" alt="">
-      <div class="profile_description"> '19 Computer Science and Japanese Undergraduate at Colgate University </div>
-      <div class="profile_contact"> Schenectady, NY </div>
-      <div class="profile_contact">
-        ycarter@colgate.edu
+      <div>
+        <%=image_tag("profile_image.jpg", alt: "Yesu Carter")%>
       </div>
+      <!-- <div class="sub_container"> -->
+        <div class="profile_description"> '19 Computer Science and Japanese Undergraduate at Colgate University </div>
+        <div class="profile_contact"> Schenectady, NY </div>
+        <div class="profile_contact">
+          ycarter@colgate.edu
+        </div>
+      <!-- </div> -->
+
     </div>
 
     <!-- Current Projects and More Information -->
     <div class="info_container">
+      <h3>Overview</h3>
 
       <div class="description_header"> Interests </div>
       <hr>
       <div class="description">
-        Web Application and Software Development where I can own my own, be proud of it, and have a direct impact on clients.
+        Web Application and Software Development where I can own my work, be proud of it, and have a tangible impact on users.
       </div>
 
       <div class="description_header"> Current Project </div>
       <hr>
-      <div class="description"> Personal Website - Building a  new personal website using the newly learned AngularJS Framework, HTML, JavaScript, and CSS. Current objective: increase job application responses (even rejections!). </div>
+      <div class="set"> Personal Website </div>
+        <div class="description">Building a new personal website using the Ruby On Rails Framework, HTML, JavaScript, and CSS. This website will eventually be replaced with a copy created under the AngularJS Framework. Current objective: increase job application responses (even rejections!). </div>
 
       <div class="description_header"> Recent Projects </div>
       <hr>
-      <div class="description"> Food Allergens Web Application - Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Received a $4,500 research grant under The Division of Natural Sciences at Colgate for this project. </div>
-      <div class="description"> Hamilton Central PTO Web Application - Developed a Ruby on Rails Web App in an Agile Dev-team of 6, solidified the foundations for Hamilton High School's new PTO. </div>
+      <div class="set"> Food Allergens Web Application</div>
+          <div class="description"> Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Received a $4,500 research grant under The Division of Natural Sciences at Colgate for this project. </div>
+      <div class="set"> Hamilton Central PTO Web Application </div>
+          <div class="description"> Developed a Ruby on Rails Web App in an Agile Dev-team of 6, solidified the foundations for Hamilton High School's new PTO. </div>
 
     </div>
+  </div>
 
-  </span>
+    <!-- Useful links -->
+    <!-- <div class="bottom_info_container">
+      <h3> Useful Links </h3>
+
+      <div class="description_header">
+        Find me on LinkedIn
+      </div>
+
+
+    </div> -->
+
+    </span>

@@ -1,9 +1,11 @@
+/* e6e6e6 */
 h1 {
   padding-left: 10px;
 }
-
-
-
+h3 {
+  font-size: 26px;
+  margin: 5px 0px;
+}
 .note {
     padding-left: 10px;
     font-size: 10px;
@@ -11,8 +13,11 @@ h1 {
 
 .profile_container {
   padding: 10px;
-  height: 350px;
-  width: 292px;
+  /* height: 350px; */
+  /* width: 292px; */
+  height: auto;
+  max-height: 350px;
+  max-width: 292px;
   border-style: solid;
   display: inline-block;
   float: left;
@@ -20,8 +25,10 @@ h1 {
 .profile_container img {
   float: left;
   height: 250px;
-  width: auto;
+  /* width: auto; */
+  max-width: 100%;
   margin-bottom: 5px;
+  display: block;
 }
 .profile_contact {
   font-size: 15px;
@@ -43,10 +50,22 @@ h1 {
 .description_header {
   font-size: 105%;
   padding-top: 5px;
+  text-align: center;
 }
-
+.set {
+  font-size: 15px;
+}
 .description {
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 5px;
+}
+.top_container {
+  background-color: #F0EBD8;
+  overflow: hidden;
+}
+.bottom_info_container {
+  width: 100%;
+  background-color: #e6e6e6;
+  margin: auto;
 }
