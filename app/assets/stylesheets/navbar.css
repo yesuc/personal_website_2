@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url('/assets/raleway/Raleway-ExtraLight.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .navbar ul {
   /* background-color: #0759bf; */
-background-color: #1D2D44;
+  background-color: #1D2D44;
   list-style-type: none;
   overflow: hidden;
 
@@ -9,6 +16,9 @@ background-color: #1D2D44;
 }
 .navbar li a {
   color: white;
+  font-family: 'Raleway-ExtraLight';
+  font-size: 15pt;
+  text-transform: uppercase;
   text-decoration: none;
   padding: 14px 16px;
   display: block;

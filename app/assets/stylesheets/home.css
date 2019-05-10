@@ -9,9 +9,6 @@
   src: url('/assets/raleway/Raleway-Bold.ttf');
   font-weight: normal;
   font-style: normal;
-  font-family:
-  src: url('/assets/raleway/Raleway-ExtraLight.tff');
-
 }
 
 h1 {
@@ -98,6 +95,7 @@ h3.header {
 .info {
   height: 50%;
 }
+
 .description {
   text-align: center;
   font-size: 12pt;
