@@ -9,15 +9,28 @@
   src: url('/assets/raleway/Raleway-Bold.ttf');
   font-weight: normal;
   font-style: normal;
+  font-family:
+  src: url('/assets/raleway/Raleway-ExtraLight.tff');
+
 }
 
 h1 {
   padding-left: 10px;
 }
 h3.header {
+  display: block;
   font-size: 30pt;
   margin: 5px 0px;
   font-family: 'Raleway-Bold';
+  text-align: center;
+}
+.header:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 15px; /* This creates some space between the element and the border. */
+    border-bottom: 3pt solid gray; /* This creates the border. Replace black with whatever color you want. */
 }
 .note {
     padding-left: 10px;
@@ -54,24 +67,42 @@ h3.header {
 
 .info_container {
  width: auto;
- padding-left: 10px;
- padding-right: 10px;
+ padding: 10px 10px;
+
  overflow: hidden;
  float: none;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+
 .description_header {
-  font-size: 105%;
+  font-size: 18pt;
   padding-top: 5px;
+  padding-bottom: 10px;
   text-align: center;
+  font-family: 'Raleway-Bold'
 }
 .set {
   font-size: 15px;
 }
+
+.info {
+  height: 50%;
+}
 .description {
-  text-align: left;
-  font-size: 13px;
+  text-align: center;
+  font-size: 12pt;
   margin-bottom: 5px;
+  font-family: 'Raleway-ExtraLight';
 }
 .top_container {
   background-color: #F0EBD8;
