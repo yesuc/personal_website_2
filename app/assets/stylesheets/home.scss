@@ -6,7 +6,7 @@
   inside Application class of application.rb -> config.assets.paths << Rails.root.join("app", "assets", "fonts")
     */
   font-family: 'Raleway-Bold';
-  src: url('/assets/raleway/Raleway-Bold.ttf');
+  src: font-url('/assets/raleway/Raleway-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }
