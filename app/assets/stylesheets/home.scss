@@ -4,6 +4,8 @@
   make fonts folder in assets
   rake assets:precompile
   inside Application class of application.rb -> config.assets.paths << Rails.root.join("app", "assets", "fonts")
+  must have a scss file to use font-url
+  yarn add --dev webpack webpack-dev-server
     */
   font-family: 'Raleway-Bold';
   src: font-url('raleway/Raleway-Bold.ttf');
