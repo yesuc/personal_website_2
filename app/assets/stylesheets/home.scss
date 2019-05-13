@@ -66,8 +66,9 @@ h3.header {
 
 .info_container {
  width: auto;
- padding: 10px 10px;
+ height: -webkit-fill-available;
 
+ padding: 10px 10px;
  overflow: hidden;
  float: none;
 }
@@ -97,6 +98,13 @@ h3.header {
 .info {
   height: 50%;
 }
+.info img {
+  height: 250px;
+  /* width: auto; */
+  max-width: 100%;
+  margin-bottom: 5px;
+  display: block;
+}
 
 .description {
   text-align: center;
@@ -107,9 +115,5 @@ h3.header {
 .top_container {
   background-color: #F0EBD8;
   overflow: hidden;
-}
-.bottom_info_container {
-  width: 100%;
-  background-color: #e6e6e6;
-  margin: auto;
+  width: -webkit-fill-available
 }
