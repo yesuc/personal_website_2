@@ -96,7 +96,10 @@ h3.header {
 }
 
 .info {
-  height: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
 }
 .info img {
   height: 250px;
