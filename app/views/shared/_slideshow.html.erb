@@ -1,0 +1,17 @@
+<div class="slideshow-container">
+
+  <!-- Image + Caption -->
+  <div class="slides fade">
+
+    <div class="numbertext"></div>
+
+    <%=link_to(image_tag("personal_website_image.png", border: 1), root_path)%>
+
+    <div class="text">Caption text</div>
+
+  </div>
+
+  <!-- "#" used so that if JS not available, link will do nothing if clicked -->
+  <%=link_to("#", controller: "home", action: "index", remote: true)%>
+  
+</div>
