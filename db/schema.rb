@@ -34,6 +34,12 @@ ActiveRecord::Schema.define(version: 2019_05_11_003652) do
   end
 
   create_table "projects", force: :cascade do |t|
+    t.string "name", null: false
+    t.date "start_date", null: false
+    t.date "end_date"
+    t.boolean "complete", null: false
+    t.string "tech_desc"
+    t.text "full_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

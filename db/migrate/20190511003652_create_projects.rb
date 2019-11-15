@@ -5,8 +5,8 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.date     :start_date,  null: false
       t.date     :end_date,    null: true
       t.boolean  :complete,    null: false
-      t.string   :tech_desc,
-      t.text     :full_description,
+      t.string   :tech_desc
+      t.text     :full_description
 
       t.timestamps
     end

@@ -4,7 +4,6 @@ class HomeController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        # render json: { up: sight.upvotes, down: sight.downvotes}, :status => :ok
       end
     end
   end
