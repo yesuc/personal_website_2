@@ -24,6 +24,7 @@
  h1 {
    padding-left: 10px;
    color: white;
+   margin-top: 10px;
    margin-bottom: 2px;
    font-size: 38px;
  }
@@ -37,4 +38,15 @@
    display: inline-block;
    height: -webkit-fill-available;
    width: -webkit-fill-available;
+ }
+
+ @media screen and (max-width: 991px) {
+   h1 {
+     text-align: center;
+     padding-left: 10px;
+     color: white;
+     margin-top: 10px;
+     margin-bottom: 2px;
+     font-size: 38px;
+   }
  }

@@ -14,10 +14,17 @@
   font-size: 15pt;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 16px;
-  display: block;
 }
 
 .navbar li a:hover {
   background-color: #748CAB;
+}
+
+.navbar ul {
+  width: -webkit-fill-available
+}
+@media screen and (max-width: 991px) {
+  .navbar ul {
+    text-align: center;
+  }
 }

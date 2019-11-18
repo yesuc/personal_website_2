@@ -4,7 +4,6 @@ var sights = (function() {
     // make any additional "private" function or variables here
 
     var vote = function(arr){
-      console.log("Hello World");
       var data = arr.detail[0];
       jQuery("#upcount").text(data['up']);
       jQuery("#downcount").text(data['down']);
