@@ -17,6 +17,7 @@ As of November 15th, 2019, the project will continue with a roadmap of target go
 * Ensure testing coverage via rspec
 * Update current profile information
 * Upload new profile picture
+* Fix slideshow on home page
 
 ## Things to note
 * Made with Ruby 2.5 and Rails 5.2.3 (was 5.2.2)

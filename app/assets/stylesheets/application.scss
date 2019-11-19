@@ -13,13 +13,14 @@
  *= require_tree .
  *= require_self
  */
-
- body {
+html {
+  height: 100%;
+}
+body {
    margin: 0;
-   /* background-color: #8abdce; */
-   /* background-color: #1D2D44; */
    background-color: #3E5C76;
- }
+   height: 100%;
+}
 
  h1 {
    padding-left: 10px;
@@ -29,15 +30,10 @@
    font-size: 38px;
  }
  .main_container {
-   /* background-color: #8abdce; Original */
-   /* background-color: #F0EBD8; */
-
-   /* margin: 0px 150px 0px; */
+   background-color: #F0EBD8;
    padding: 4px 4px;
-
    display: inline-block;
-   height: -webkit-fill-available;
-   width: -webkit-fill-available;
+   height: 100%;
  }
 
  @media screen and (max-width: 991px) {

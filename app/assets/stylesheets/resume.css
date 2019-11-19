@@ -1,6 +1,3 @@
-.main_container {
-  background-color: #F0EBD8;
-}
 .download_pdf {
   margin-top: 10px;
   display: inline-block;
@@ -10,7 +7,6 @@
 }
 
 .section {
-  /* margin: 0px 80px; */
   margin: 0px 200px;
 }
 h2 {
