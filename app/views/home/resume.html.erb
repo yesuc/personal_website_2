@@ -2,49 +2,55 @@
   <title>Yesu's Resume</title>
 </head>
 
-<!-- Header -->
-<h1>Yesu Carter</h1>
+<div class="main_container container-fluid">
 
-<!-- Site Navigation Bar -->
-<%=render("shared/navbar")%>
-
-<div class="main_container" >
-
- <%=link_to 'Download the full PDF', download_pdf_path, class:"download_pdf"%>
+ <%=link_to 'Download Me!', download_pdf_path, class:"download_pdf"%>
 
  <!-- Education -->
  <section class="section">
-   <h2>Education</h2>
+   <h2 class="header">Education</h2>
      <span>Bachelor of Arts</span>
-     <div class="location">Expected May 2019, Colgate University, Hamilton, NY </div>
+     <div class="location"> May 2019, Colgate University, Hamilton, NY </div>
 
     <ul class="bullets">
-     <li> Current GPA: 3.56/4.0 </li>
+     <li> Overall GPA: 3.56/4.0 </li>
      <li> Double Major: Computer Science and Japanese Language </li>
-     <li>
-       Dean's Award For Academic Excellence (All Semesters)
-     </li>
+     <li> Magna Cum Laude Graduate </li>
+     <li> Dean's Award For Academic Excellence (All Semesters) </li>
    </ul>
 
  </section>
 
  <!-- Technical Knowledge -->
  <section class="section">
-   <h2>Technical Knowledge</h2>
+   <h2 class="header">Technical Knowledge</h2>
 
      <div class="set">
        Frameworks and Experience
-       <%-fworks= {'Ruby-On-Rails' => '2 years', 'AngularJS' => '1 year'} %>
+       <%-fworks= {'Ruby-On-Rails' => 2, 'Node JS' => 1, 'AngularJS' => 1} %>
        <%-fworks.each do |name, exp|%>
          <ul class="bullets">
-           <li> <%="#{name} - #{exp}"%>
-             </li>
+           <li>
+             <%="#{name}"%>
+             <div class="progress active">
+               <%if 2 < exp %>
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
+               <%elsif 1 < exp %>
+                  <div class="progress-bar w-50" role="progressbar"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
+               <%else%>
+                  <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
+               <%end%>
+             </div>
+           </li>
          </ul>
       <%end%>
      </div>
 
      <div class="set">
          Languages and Proficiency
+         <div class="hexagon"></div>
+         <div class="hexagon"></div>
+
          <%-pLangs= {'High' => ['Java', 'Python', 'Ruby'], 'Intermediate' => ['HTML', 'CSS', 'JavaScript', 'SQLite']}%>
          <%-pLangs.each do |prof, langList|%>
            <ul class="bullets">
@@ -75,7 +81,7 @@
 
  <!-- Projects -->
  <section class="section">
-   <h2>Projects</h2>
+   <h2 class="header">Projects</h2>
    <div class="set">
      <a href="https://github.com/yesuc/FAD-Webapp" rel="noopener noreferrer" target="_blank"> Allergens and Dietary Restrictions Web App</a>
      <div class="location"> Summer 2018 - Colgate University, Hamilton, NY </div>

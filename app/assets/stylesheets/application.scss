@@ -34,6 +34,7 @@ body {
    padding: 4px 4px;
    display: inline-block;
    height: 100%;
+   overflow: scroll;
  }
 
  @media screen and (max-width: 991px) {
@@ -46,3 +47,57 @@ body {
      font-size: 38px;
    }
  }
+
+
+.header {
+   display: block;
+   font-size: 30pt;
+   margin: 5px 0px;
+   font-family: 'Raleway-Bold';
+   text-align: center;
+ }
+ .header:after {
+     content: ""; /* This is necessary for the pseudo element to work. */
+     display: block; /* This will put the pseudo element on its own line. */
+     margin: 0 auto; /* This will center the border. */
+     width: 10%; /* Change this to whatever width you want. */
+     padding-top: 15px; /* This creates some space between the element and the border. */
+     border-bottom: 3pt solid gray; /* This creates the border. Replace black with whatever color you want. */
+ }
+
+
+ .hexagon {
+  position: relative;
+  width: 200px;
+  height: 115.47px;
+  background-color: #ffffff;
+  margin: 57.74px 0;
+  border-left: solid 5px #333333;
+  border-right: solid 5px #333333;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 141.42px;
+  height: 141.42px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 24.2893px;
+}
+
+.hexagon:before {
+  top: -70.7107px;
+  border-top: solid 7.0711px #333333;
+  border-right: solid 7.0711px #333333;
+}
+
+.hexagon:after {
+  bottom: -70.7107px;
+  border-bottom: solid 7.0711px #333333;
+  border-left: solid 7.0711px #333333;
+}

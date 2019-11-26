@@ -7,8 +7,19 @@
 }
 
 .section {
-  margin: 0px 200px;
+  margin: 0px 175px;
 }
+@media screen and (max-width: 770px) {
+  .section {
+    margin: 0px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section {
+    margin: 0px 70px;
+  }
+}
+
 h2 {
   margin-top: 3px;
   margin-bottom: 3px;
@@ -36,8 +47,6 @@ span.date {
 .set a {
   text-decoration: none;
 }
-
-
 
 .outerpart {
   display: block;

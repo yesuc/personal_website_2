@@ -1,92 +1,88 @@
 <head>
   <title>Yesu's Home Page</title>
 </head>
-    <!-- Header -->
-    <h1>Yesu Carter</h1>
-    <div class="note">
-      Website still under development.
-    </div>
 
-    <!-- Site Navigation Bar -->
-    <%=render("shared/navbar")%>
+<div class="note">
+  Website still under development.
+</div>
 
-    <div class="main_container container-fluid">
-      <div class="top_container">
-        <!-- Profile Image and Short Description -->
-        <div class="row">
-          <div class="col col-md-4">
-            <div class="profile_container">
-              <div>
-                <%=image_tag("profile_image.jpg", alt: "Yesu Carter", class: "img-fluid max-width")%>
-              </div>
-                <div class="profile_description"> Associate Consultant at Sogeti USA '19 Alumni Colgate University </div>
-                <div class="profile_contact"> Atlanta, GA </div>
-                <div class="profile_contact">
-                  yesucarter@gmail.com
+<div class="main_container container-fluid">
+  <div class="top_container">
+    <!-- Profile Image and Short Description -->
+    <div class="row">
+      <div class="col col-md-4">
+        <div class="profile_container">
+          <div>
+            <%=image_tag("profile_image.jpg", alt: "Yesu Carter", class: "img-fluid max-width")%>
+          </div>
+            <div class="profile_description"> Associate Consultant at Sogeti USA, '19 Alumni Colgate University </div>
+            <div class="profile_contact"> Atlanta, GA </div>
+            <div class="profile_contact">
+              yesucarter@gmail.com
+            </div>
+        </div>
+      </div>
+
+      <!-- Current Projects and More Information -->
+      <div class="col col-md-8">
+
+        <div class="info_container">
+          <h3 class="header">About</h3>
+
+            <div class="flex">
+              <div class="flex_container">
+                <div class="info">
+                  <div class="description_header"> Interests </div>
+
+                  <div class="description">
+                    Web Application and Software Development with a focus on fast and seamless performance.
+                  </div>
                 </div>
+
+                <div class="info">
+                  <div class="description_header"> Skills </div>
+
+                  <div class="description">
+                    Java, Python, Ruby, Golang, HTML, CSS, JavaScript, JQuery
+                  </div>
+                  <div class="description">
+                    Ruby on Rails, Node JS, AngularJS
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex_container">
+                <div class="info">
+                <div class="description_header"> Current Project </div>
+                  <div class="description"> Building this personal website using the Ruby On Rails Framework! </div>
+                </div>
+
+                <div class="info">
+                  <div class="description_header"> Recent Projects </div>
+                  <button class="set btn btn-link" type="button" data-toggle="collapse" data-target="#couchDescription">
+                    Couch Gaming
+                  </button>
+                  <div class="description collapse" id="couchDescription">
+                    Working on a barebones videogame marketplace with a focus on flexibility between mobile and large screen layouts.
+                  </div>
+                  <button class="set btn btn-link" type="button" data-toggle="collapse" data-target="#FADDescription">
+                    Food Allergens Web Application
+                  </button>
+                  <div class="description collapse" id="FADDescription">
+                      Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Received a $4,500 research grant under The Division of Natural Sciences at Colgate for this project.
+                  </div>
+                  <button class="set btn btn-link moreBtn" type="button" data-toggle="collapse" data-target="#HCSDescription">
+                     Hamilton Central PTO Web Application
+                  </button>
+                  <div class="description collapse" id="HCSDescription">
+                      Developed a Ruby on Rails Web App in an Agile Dev-team of 6, solidified the foundations for Hamilton High School's new PTO.
+                  </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-
-          <!-- Current Projects and More Information -->
-          <div class="col col-md-8">
-
-            <div class="info_container">
-              <h3 class="header">About</h3>
-
-                <div class="flex">
-                  <div class="flex_container">
-                    <div class="info">
-                      <div class="description_header"> Interests </div>
-
-                      <div class="description">
-                        Web Application and Software Development with a focus on fast and seamless performance.
-                      </div>
-                    </div>
-
-                    <div class="info">
-                      <div class="description_header"> Skills </div>
-
-                      <div class="description">
-                        Java, Python, Ruby, HTML, CSS, JavaScript, JQuery
-                      </div>
-                      <div class="description">
-                        Ruby on Rails, Node JS, AngularJS
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex_container">
-                    <div class="info">
-                    <div class="description_header"> Current Project </div>
-                      <div class="description"> Building this personal website using the Ruby On Rails Framework! </div>
-                    </div>
-
-                    <div class="info">
-                      <div class="description_header"> Recent Projects </div>
-                      <button class="set btn btn-link" type="button" data-toggle="collapse" data-target="#couchDescription">
-                        Couch Gaming
-                      </button>
-                      <div class="description collapse" id="couchDescription">
-                        Working on a barebones videogame marketplace with a focus on flexibility between mobile and large screen layouts.
-                      </div>
-                      <button class="set btn btn-link" type="button" data-toggle="collapse" data-target="#FADDescription">
-                        Food Allergens Web Application
-                      </button>
-                      <div class="description collapse" id="FADDescription">
-                          Utilized NLTK and OCR technology to gather resturant foods and identify common and hidden allergens. Written using the Ruby on Rails Framework. Received a $4,500 research grant under The Division of Natural Sciences at Colgate for this project.
-                      </div>
-                      <button class="set btn btn-link moreBtn" type="button" data-toggle="collapse" data-target="#HCSDescription">
-                         Hamilton Central PTO Web Application
-                      </button>
-                      <div class="description collapse" id="HCSDescription">
-                          Developed a Ruby on Rails Web App in an Agile Dev-team of 6, solidified the foundations for Hamilton High School's new PTO.
-                      </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
-    </div>
+        </div>
+  </div>
+</div>
