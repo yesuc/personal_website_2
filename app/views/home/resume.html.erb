@@ -31,11 +31,13 @@
        <%-fworks.each do |name, exp|%>
          <ul class="bullets">
            <li>
-             <%="#{name}"%>
+             <div class="name">
+               <%="#{name}"%>
+             </div>
              <div class="progress active">
-               <%if 2 < exp %>
+               <%if 1 < exp %>
                   <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
-               <%elsif 1 < exp %>
+               <%elsif 1 == exp %>
                   <div class="progress-bar w-50" role="progressbar"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
                <%else%>
                   <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><%="#{exp} years"%></div>
@@ -47,16 +49,33 @@
      </div>
 
      <div class="set">
+       <div>
          Languages and Proficiency
-         <div class="hexagon"></div>
-         <div class="hexagon"></div>
-
-         <%-pLangs= {'High' => ['Java', 'Python', 'Ruby'], 'Intermediate' => ['HTML', 'CSS', 'JavaScript', 'SQLite']}%>
-         <%-pLangs.each do |prof, langList|%>
-           <ul class="bullets">
-             <li> <%="#{prof} - #{langList.join(', ')}"%> </li>
-           </ul>
-        <%end%>
+       </div>
+       <div class="container">
+         <div class="row">
+           <div class="col hex-container">
+             <div class="col">
+               High
+             </div>
+             <div class="hexagon">
+               <div class="text_box">
+                 Java, Ruby, Python
+               </div>
+             </div>
+           </div>
+           <div class="col hex-container">
+             <div class="col">
+               Medium
+             </div>
+             <div class="hexagon">
+               <div class="text_box">
+                 HTML, CSS, JavaScript, SQLite
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
      </div>
 
      <div class="set">
