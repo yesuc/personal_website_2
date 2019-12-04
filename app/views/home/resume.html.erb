@@ -26,7 +26,9 @@
    <h2 class="header">Technical Knowledge</h2>
 
      <div class="set">
-       Frameworks and Experience
+       <div class="h4">
+         Frameworks and Experience
+       </div>
        <%-fworks= {'Ruby-On-Rails' => 2, 'Node JS' => 1, 'AngularJS' => 1} %>
        <%-fworks.each do |name, exp|%>
          <ul class="bullets">
@@ -49,49 +51,64 @@
      </div>
 
      <div class="set">
-       <div>
+       <div class="h4">
          Languages and Proficiency
        </div>
        <div class="container">
-         <div class="row">
-           <div class="col hex-container">
-             <div class="col">
+         <div class="col">
+
+           <div class="row">
+             <div class="col hex-header">
                High
              </div>
-             <div class="hexagon">
-               <div class="text_box">
-                 Java, Ruby, Python
-               </div>
+             <div class="col hex-header">
+               Intermediate
              </div>
            </div>
-           <div class="col hex-container">
-             <div class="col">
-               Medium
+           <div class="row">
+             <div class="col hex-container">
+               <div class="hexagon">
+                 <div class="text_box">
+                   Java, GoLang, Ruby, Python
+                 </div>
+               </div>
              </div>
-             <div class="hexagon">
-               <div class="text_box">
-                 HTML, CSS, JavaScript, SQLite
+             <div class="col hex-container">
+               <div class="hexagon">
+                 <div class="text_box">
+                   HTML, CSS, JavaScript, SQLite
+                 </div>
                </div>
              </div>
            </div>
          </div>
+
+         <div class="col">
+           <div class="h4">
+             Frequently Used Tech Tools
+           </div>
+           <%-toolList= {'Github' => 'Version Control', 'Jira & Pivotal Tracker' => 'Features & Project Velocity', 'CircleCI' => 'Continuous Integration and Deployment', 'Heroku' => 'App Deployment'}%>
+           <%toolList.each do |tool, desc|%>
+            <ul class="bullets">
+              <li>
+                <%="#{tool} - #{desc}"%>
+               </li>
+            </ul>
+          <%end%>
+         </div>
+
+
        </div>
      </div>
 
      <div class="set">
-       Frequently Used Tech Tools
-       <%-toolList= {'Github' => 'Version Control', 'Pivotal Tracker' => 'Project Velocity', 'Heroku' => 'App Deployment'}%>
-       <%toolList.each do |tool, desc|%>
-        <ul class="bullets">
-          <li>
-            <%="#{tool} - #{desc}"%>
-           </li>
-        </ul>
-      <%end%>
+
      </div>
 
      <div class="set">
-       Important Courses
+       <div>
+         Certifications & Courses
+       </div>
        <div class="courses">
          Software Engineering, Databases, Algorithm Analysis, Operating Systems, Discrete Structures
        </div>

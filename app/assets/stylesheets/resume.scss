@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: font-url('raleway/Raleway-Regular.ttf');
+}
 .download_pdf {
   margin-top: 10px;
   display: inline-block;
@@ -48,8 +52,11 @@ span.date {
   margin-top: 1px;
   margin-bottom: 1px;
 }
-.set a {
-  text-decoration: none;
+.set {
+  margin: 15px 0px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .outerpart {
@@ -64,14 +71,24 @@ span.date {
 .exp {
   font-size: 13px;
 }
+
+.hex-header {
+  font-size: 18px;
+  font-family: "Raleway-Bold";
+  text-align: center;
+  margin-bottom: 10px;
+}
 .hex-container {
   text-align: -webkit-center;
 }
 .text_box {
+  padding-top: 20%;
+  padding-left: 5%;
+  padding-right:5%;
   position: relative;
   z-index: 1;
   text-align: center;
-  font-family: 'Raleway-ExtraLight';
+  font-family: 'Raleway-Regular';
   height: -webkit-fill-available;
 }
 

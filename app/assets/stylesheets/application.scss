@@ -66,12 +66,13 @@ body {
  }
 
 
+// Hexagon (src: https://csshexagon.com/)
  .hexagon {
   position: relative;
-  width: 200px;
-  height: 115.47px;
+  width: 175px;
+  height: 101.04px;
   background-color: #ffffff;
-  margin: 57.74px 0;
+  margin: 50.52px 0;
   border-left: solid 5px #007bff;
   border-right: solid 5px #007bff;
 }
@@ -81,23 +82,24 @@ body {
   content: "";
   position: absolute;
   z-index: 1;
-  width: 141.42px;
-  height: 141.42px;
+  width: 123.74px;
+  height: 123.74px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 24.2893px;
+  left: 20.6282px;
 }
 
 .hexagon:before {
-  top: -70.7107px;
+  top: -61.8718px;
   border-top: solid 7.0711px #007bff;
   border-right: solid 7.0711px #007bff;
 }
 
 .hexagon:after {
-  bottom: -70.7107px;
+  bottom: -61.8718px;
   border-bottom: solid 7.0711px #007bff;
   border-left: solid 7.0711px #007bff;
+  z-index: 0;
 }
